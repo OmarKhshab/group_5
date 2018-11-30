@@ -9,7 +9,7 @@ package gameonlinestoresystem;
  *
  * @author Dell
  */
-public class Customer {
+public class Customer implements Observer,paymentMethod{
     public String customerID;
     
 
@@ -39,5 +39,10 @@ public class Customer {
     public void update()
     {
         
+    }
+
+    @Override
+    public void pay() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

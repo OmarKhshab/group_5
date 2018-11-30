@@ -10,7 +10,7 @@ package gameonlinestoresystem;
  * @author Dell
  */
 import java.util.*;
-public class customerService {
+public class customerService implements Observer{
     public String SSN;
     ArrayList<String> Tickects = new ArrayList<String>();
 

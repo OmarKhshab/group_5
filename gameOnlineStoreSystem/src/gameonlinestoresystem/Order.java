@@ -9,8 +9,8 @@ package gameonlinestoresystem;
  *
  * @author Dell
  */
-public class Order {
-    public String OrderID;
+public class Order implements Subject{
+    public final String OrderID;
     public String OrderStatus;
 
     public Order(String OrderID, String OrderStatus) {
@@ -21,22 +21,11 @@ public class Order {
     public String getOrderID() {
         return OrderID;
     }
-
-    public void setOrderID(String OrderID) {
-        this.OrderID = OrderID;
-    }
-
+    
     public String getOrderStatus() {
         return OrderStatus;
     }
 
-    public void setOrderStatus(String OrderStatus) {
-        this.OrderStatus = OrderStatus;
-    }
-    public void Order(String OrderID, String OrderStatus )
-    {
-        
-    }
     public void trackOrder(String OrderID)
     {
         
@@ -46,5 +35,22 @@ public class Order {
         
     }
     
+    @Override
+    public void addObserver(Observer o )
+    {
+        
+    }
     
+    @Override
+    public void removeObserver(Observer o )
+    {
+        
+    }
+
+    @Override
+    public void notifyObserver( )
+    {
+        
+    }
+
 }

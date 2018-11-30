@@ -9,6 +9,11 @@ package gameonlinestoresystem;
  *
  * @author Dell
  */
-public class systemAdmin {
+public class systemAdmin implements Observer{
+
+    @Override
+    public void update() {
+        
+    }
     
 }

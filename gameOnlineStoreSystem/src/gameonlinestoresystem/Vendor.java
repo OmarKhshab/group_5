@@ -10,7 +10,7 @@ package gameonlinestoresystem;
  * @author Dell
  */
 import java.util.*;
-public class Vendor {
+public class Vendor implements Observer{
     public String SSN;
     ArrayList<Item>items=new ArrayList<Item>();
     
@@ -32,5 +32,10 @@ public class Vendor {
     public void viewItems(String itemID)
     {
     
+    }
+
+    @Override
+    public void update() {
+        
     }
 }
